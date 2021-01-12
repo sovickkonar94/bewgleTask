@@ -2,6 +2,11 @@
 
 ## Description
 This REST api is for library management such that users can see and borrow books from the library 
+## Usage
+To run the project, please use the command line the following:
+- npm run start 
+  - this will run the server on port 3000
+
 
 ## API Endpoints
 - base endpoint : http://localhost:3000/api
@@ -34,4 +39,10 @@ This REST api is for library management such that users can see and borrow books
 ### List All Borrow
 - method : GET
 - url : http://localhost:3000/api/borrow/list
+
+## Thoughts
+- Whenever a user wants to borrow a book the userid and bookid are passed to store the borrowing details in the Borrow Model
+- If the number of borrowing for a user is greater than 2 in the Borrow model the user is restricted to borrow anymore.
+
+
 
